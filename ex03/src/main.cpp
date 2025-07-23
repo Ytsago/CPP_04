@@ -2,7 +2,7 @@
 #include "Ice.hpp"
 #include "Character.hpp"
 #include "MateriaSource.hpp"
-/*
+
 int main() {
 	ICharacter		*player[2];
 	IMateriaSource	*spellBook;
@@ -31,7 +31,7 @@ int main() {
 	delete player[1];
 	delete spellBook;
 }
-*/
+/*
 int main()
 {
 IMateriaSource* src = new MateriaSource();
@@ -51,7 +51,7 @@ delete me;
 delete src;
 return 0;
 }
-/*
+
 int main()
 {
     IMateriaSource* src = new MateriaSource();

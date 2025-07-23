@@ -1,7 +1,6 @@
 #ifndef AMATERIA_HPP
 # define AMATERIA_HPP
 
-#include <iostream>
 #include "ICharacter.hpp"
 
 class AMateria {
@@ -16,6 +15,5 @@ class AMateria {
 		virtual void use(ICharacter& target);
 	protected:
 		std::string	_type;
-
 };
 #endif
