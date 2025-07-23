@@ -31,7 +31,7 @@ int main() {
 	delete player[1];
 	delete spellBook;
 }
-
+*/
 int main()
 {
 IMateriaSource* src = new MateriaSource();
@@ -51,7 +51,7 @@ delete me;
 delete src;
 return 0;
 }
-*/
+/*
 int main()
 {
     IMateriaSource* src = new MateriaSource();
@@ -116,4 +116,4 @@ int main()
     delete me;
     delete src;
     return 0;
-}
+}*/

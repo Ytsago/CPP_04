@@ -6,14 +6,14 @@ Character::Character() {
 	this->_name = "Kevin";
 	for (unsigned int i = 0; i < _invSize; i++) 
 		this->_inventory[i] = NULL;
-	std::cout << "Charachter default constructor called" << std::endl;
+	//std::cout << "Charachter default constructor called" << std::endl;
 }
 
 Character::Character(std::string name) {
 	this->_name = name;
 	for (unsigned int i = 0; i < _invSize; i++) 
 		this->_inventory[i] = NULL;
-	std::cout << "Character overload constructor called" << std::endl;
+	//std::cout << "Character overload constructor called" << std::endl;
 }
 
 Character::Character(const Character &other) {
@@ -24,11 +24,11 @@ Character::Character(const Character &other) {
 		else
 			this->_inventory[i] = NULL;
 	}
-	std::cout << "Copy constructor called" << std::endl;
+	//std::cout << "Copy constructor called" << std::endl;
 }
 
 Character	&Character::operator=(const Character &other) {
-	std::cout << "Copy assignment operator called" << std::endl;
+	//std::cout << "Copy assignment operator called" << std::endl;
 	if (this != &other) {
 		for (unsigned int i = 0; i < _invSize; i++) {
 			if (this->_inventory[i])
@@ -51,7 +51,7 @@ void	Character::equip(AMateria* m) {
 	for (unsigned int i = 0; i < _invSize; i++)
 		if (this->_inventory[i] == NULL) {
 			this->_inventory[i] = m;
-			std::cout << "Materia equiped !" << std::endl;
+			//std::cout << "Materia equiped !" << std::endl;
 			return ;
 		}
 	std::cout << "Inventory full." << std::endl;
@@ -111,5 +111,5 @@ Character::~Character() {
 		this->_inventory[i] = NULL;
 	}
 	wipe_floor(_floor);
-	std::cout << "Character destructor called" << std::endl;
+//	std::cout << "Character destructor called" << std::endl;
 }

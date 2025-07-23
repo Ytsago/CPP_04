@@ -3,7 +3,7 @@
 MateriaSource::MateriaSource() {
 	for (unsigned int i = 0; i < _bookSize; i++)
 		this->_book[i] = NULL;
-	std::cout << "MateriaSource default constructor called" << std::endl;
+//	std::cout << "MateriaSource default constructor called" << std::endl;
 }
 
 MateriaSource::MateriaSource(const MateriaSource &other) {
@@ -13,11 +13,11 @@ MateriaSource::MateriaSource(const MateriaSource &other) {
 		else
 			this->_book[i] = NULL;
 	}
-	std::cout << "Copy constructor called" << std::endl;
+//	std::cout << "Copy constructor called" << std::endl;
 }
 
 MateriaSource	&MateriaSource::operator=(const MateriaSource &other) {
-	std::cout << "Copy assignment operator called" << std::endl;
+//	std::cout << "Copy assignment operator called" << std::endl;
 	if (this != &other)	{
 		for (unsigned int i = 0; i < _bookSize; i++) {
 			if (this->_book[i])
@@ -38,7 +38,7 @@ void MateriaSource::learnMateria(AMateria* m) {
 	for (unsigned int i = 0; i < _bookSize; i++)
 		if (this->_book[i] == NULL) {
 			this->_book[i] = m->clone();
-			std::cout << "Materia " << m->getType() << " learn !" << std::endl;
+//			std::cout << "Materia " << m->getType() << " learn !" << std::endl;
 			delete m;
 			return ;
 		}
@@ -60,5 +60,5 @@ MateriaSource::~MateriaSource() {
 		if (this->_book[i])
 			delete this->_book[i];
 	}
-	std::cout << "MateriaSource destructor called" << std::endl;
+//	std::cout << "MateriaSource destructor called" << std::endl;
 }
