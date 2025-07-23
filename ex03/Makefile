@@ -1,6 +1,6 @@
 # -----------RULES-----------#
 
-CFLAGS = -Wall -Wextra -Werror -MMD -MP -std=c++98 -g3
+CFLAGS = -Wall -Wextra -Werror -MMD -MP -std=c++98 
 CC = c++
 AR = ar
 ARFLAG = -rcs
