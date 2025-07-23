@@ -15,9 +15,10 @@ class Character: public ICharacter {
 		void equip(AMateria* m);
 		void unequip(int idx);
 		void use(int idx, ICharacter& target);
-		static AMateria *_floor[4];
 	private:
-		AMateria*	_inventory[4];
+		std::string	_name;
 		static const unsigned int	_invSize = 4;
+		AMateria*	_inventory[_invSize];
+		static AMateria *_floor[4];
 };
 #endif
