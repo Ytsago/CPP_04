@@ -6,6 +6,7 @@ int main() {
 {
 	Dog			rex;
 	Cat			snow;
+	Cat			cpySnow(snow);
 	WrongCat	snake;
 	Animal		random;
 
