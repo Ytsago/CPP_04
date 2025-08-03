@@ -11,6 +11,7 @@ class Dog: public Animal {
 		Dog(const Dog &other);				//Copy constructor
 		Dog &operator=(const Dog &other);	//Copy operator
 		void	makeSound();
+		Brain*	getBrain() const;
 	private:
 		Brain	*_brain;
 };

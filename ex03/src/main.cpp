@@ -2,11 +2,16 @@
 #include "Ice.hpp"
 #include "Character.hpp"
 #include "MateriaSource.hpp"
+#include <cstdio>
 
 int main() {
 	ICharacter		*player[2];
 	IMateriaSource	*spellBook;
+	AMateria *cure = new Cure;
+	AMateria *ice = new Ice;
 
+	*cure = *ice;
+	std::cout << cure->getType() << std::endl;
 	spellBook = new MateriaSource;
 	player[0] = new Character("Kevin");
 	player[1] = new Character("Iris");
@@ -34,7 +39,6 @@ int main() {
 	player[0]->equip(spellBook->createMateria("cure"));
 	player[0]->unequip(0);
 	player[0]->unequip(1);
-	delete player[0];
 	delete player[1];
 	delete spellBook;
 }

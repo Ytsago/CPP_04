@@ -16,7 +16,19 @@ int main() {
 	  		farm[i] = new Dog;
 	}
 	std::cout << std::endl;
+	
+	tygrou.getBrain()->setIdea(0, "Tuna");
+	snowBall.getBrain()->setIdea(0, "Salmon");
+	snowBall.getBrain()->setIdea(1, "Clownfish");
+	
+	std::cout << "Tygrou think primarly of " << tygrou.getBrain()->getIdea(0) << " and of " << tygrou.getBrain()->getIdea(1)
+	<< "\nSnowball think primarly of " << snowBall.getBrain()->getIdea(0) << " and of " << snowBall.getBrain()->getIdea(1) << std::endl;
 	tygrou = snowBall;
+	std::cout << "Tygrou think primarly of " << tygrou.getBrain()->getIdea(0) << " and of " << tygrou.getBrain()->getIdea(1)
+	<< "\nSnowball think primarly of " << snowBall.getBrain()->getIdea(0) << " and of " << snowBall.getBrain()->getIdea(1) << "\n" << std::endl;
+	std::cout << "Tygrou's brain : " << tygrou.getBrain() << " Snowball's brain : " << snowBall.getBrain() << std::endl;
+	snowBall.getBrain()->setIdea(2, "Cod");
+	std::cout << "Snowball third idea : " << snowBall.getBrain()->getIdea(2) << "\nTygrou third idea : "<< tygrou.getBrain()->getIdea(2) << std::endl; 
 	for (int i = 0; i < ANIMALNB; i++)
 		farm[i]->makeSound();
 	std::cout << std::endl;

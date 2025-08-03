@@ -11,6 +11,7 @@ class Cat: public Animal {
 		Cat(const Cat &other);				//Copy constructor
 		Cat &operator=(const Cat &other);	//Copy operator
 		void	makeSound();
+		Brain*	getBrain() const;
 	private:
 		Brain	*_brain;
 };

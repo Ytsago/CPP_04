@@ -19,7 +19,7 @@ void	Cure::use(ICharacter& target) {
 Cure	&Cure::operator=(const Cure &other) {
 	//std::cout << "Copy assignment operator called" << std::endl;
 	if (this != &other)
-		return (*this);
+		AMateria::operator=(other);
 	return (*this);
 }
 

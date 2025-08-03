@@ -19,7 +19,7 @@ std::string const  &AMateria::getType() const {return this->_type;}
 AMateria	&AMateria::operator=(const AMateria &other) {
 	//std::cout << "Copy assignment operator called" << std::endl;
 	if (this != &other)
-		return (*this);
+		this->_type = other._type;
 	return (*this);
 }
 
