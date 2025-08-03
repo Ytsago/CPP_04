@@ -13,7 +13,7 @@ class MateriaSource : public IMateriaSource {
 		void learnMateria(AMateria* m);
 		AMateria* createMateria(std::string const & type);
 	private:
-		AMateria			*_book[4];
 		static const unsigned int	_bookSize = 4;
+		AMateria			*_book[_bookSize];
 };
 #endif

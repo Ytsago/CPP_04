@@ -25,8 +25,15 @@ int main() {
 	player[1]->use(1, *player[0]);
 	player[1]->unequip(0);
 	player[1]->use(0, *player[0]);
+	player[0]->use(1, *player[1]);
 
 	std::cout << std::endl << std::endl;
+	player[0]->unequip(0);
+	player[0]->unequip(1);
+	player[0]->equip(spellBook->createMateria("ice"));
+	player[0]->equip(spellBook->createMateria("cure"));
+	player[0]->unequip(0);
+	player[0]->unequip(1);
 	delete player[0];
 	delete player[1];
 	delete spellBook;

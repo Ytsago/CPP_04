@@ -17,7 +17,7 @@ OBJDIR = .Obj/
 
 MAIN =	main.cpp
 
-CLASS = AMateria.cpp Character.cpp Cure.cpp ICharacter.cpp Ice.cpp IMateriaSource.cpp MateriaSource.cpp 
+CLASS = AMateria.cpp Character.cpp Cure.cpp Ice.cpp MateriaSource.cpp 
 
 INC = 	AMateria.hpp Character.hpp Cure.hpp ICharacter.hpp Ice.hpp IMateriaSource.hpp MateriaSource.hpp 
 
